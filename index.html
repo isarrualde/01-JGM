@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Style Guide - JGM Tablero</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- Add icon library -->
+	<link rel="stylesheet" href="main.css"></head>
+
+    <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+<body>
+
+	<div class="container-fluid h-100">
+		<div class="row h-100">
+		    <div class="col-lg-2 pt-lg-3 pt-md-3 pt-xs-3 pb-lg-3 pb-md-3 pb-xs-3 bg-light collapse show" id="collapseExample">
+		      <div class="nav nav-pills navbar-nav" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+		        <a class="nav-link active show p-lg-2 p-md-2 p-xs-2" data-toggle="pill" href="#Typography" role="tab" aria-controls="Typography" aria-selected="false">Tipografía</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Colors" role="tab" aria-controls="Colors" aria-selected="false">Colores</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#main-nav" role="tab" aria-controls="main-nav" aria-selected="false">Main Nav</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Pagination" role="tab" aria-controls="Pagination" aria-selected="false">Paginación</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Buttons" role="tab" aria-controls="Buttons" aria-selected="false">Botones</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Modal" role="tab" aria-controls="Modal" aria-selected="false">Modal</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Tables" role="tab" aria-controls="Tables" aria-selected="false">Tablas</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Forms" role="tab" aria-controls="Forms" aria-selected="false">Forms</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Accordion" role="tab" aria-controls="Accordion" aria-selected="false">Accordion</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Tabs" role="tab" aria-controls="Tabs" aria-selected="false">Tabs</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Alerts" role="tab" aria-controls="Tabs" aria-selected="false">Alerts</a>
+		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Wizard" role="tab" aria-controls="Wizard" aria-selected="false">Wizard</a>
+		      </div>
+		    </div>
+		    <div class="col-lg-10 pt-lg-3 pt-md-3 pt-xs-3 pb-lg-3 pb-md-3 pb-xs-3 bg-white">
+		      <div class="tab-content" id="v-pills-tabContent">
+		        <div class="tab-pane fade active show" id="Typography" role="tabpanel" aria-labelledby="Typography">
+		        	<h3>Tipografía</h3>
+		          <p>Usamos un Font Stack Nativo de Boostrap 4 que selecciona la mejor font-family para cada OS y dispositivo. <a target="_blank" href="https://getbootstrap.com/docs/4.1/content/reboot/#native-font-stack">Leer más</a> </p>
+		          
+		       		<figure class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nv">$font-family-sans-serif</span><span class="p">:</span>
+  <span class="c1">// Safari for OS X and iOS (San Francisco)</span>
+  <span class="nt">-apple-system</span><span class="o">,</span>
+  <span class="c1">// Chrome &lt; 56 for OS X (San Francisco)</span>
+  <span class="nt">BlinkMacSystemFont</span><span class="o">,</span>
+  <span class="c1">// Windows</span>
+  <span class="s2">"Segoe UI"</span><span class="o">,</span>
+  <span class="c1">// Android</span>
+  <span class="s2">"Roboto"</span><span class="o">,</span>
+  <span class="c1">// Basic web fallback</span>
+  <span class="s2">"Helvetica Neue"</span><span class="o">,</span> <span class="nt">Arial</span><span class="o">,</span> <span class="nt">sans-serif</span><span class="o">,</span>
+  <span class="c1">// Emoji fonts</span>
+  <span class="s2">"Apple Color Emoji"</span><span class="o">,</span> <span class="s2">"Segoe UI Emoji"</span><span class="o">,</span> <span class="s2">"Segoe UI Symbol"</span> <span class="o">!</span><span class="nt">default</span><span class="o">;</span></code></pre></figure>
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="bd-example">
+							<h2 class="page-title">Titulo de página</h2>
+							<h3 class="page-sub-title">Subtitulo de ejemplo</h3>
+
+						</div>
+						<div class="highlight">
+							<pre> <code class="language-html" data-lang="html"><span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"page-title"</span><span class="nt">&gt;</span>Titulo de página<span class="nt">&lt;/h2&gt;</span>
+ <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"page-sub-title"</span><span class="nt">&gt;</span>Subtitulo de ejemplo<span class="nt">&lt;/h3&gt;</span>
+
+</code></pre></div>
+					</div>
+				</div>
+
+		        </div>
+		        <div class="tab-pane fade" id="Colors" role="tabpanel" aria-labelledby="Colors">
+		        	<h3>Colores</h3>
+		          <p>Brand Colors</p>
+		          <div class="color-swatches">
+		          	<div class="row m-lg-0 m-md-0 m-xs-0 pb-lg-2">
+					    <div class="color-swatch bd-main-blue">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$main-blue - #0695d6</code>
+					    	</div>
+					    	
+					    </div>
+					    <div class="color-swatch bd-secondary-blue">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$secondary-blue - #17b2f8</code>
+					    	</div>
+					    </div>
+						<div class="color-swatch bd-box-info">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$box-information - #d1f0fe</code>
+					    	</div>
+					    </div>					    
+		          	</div>
+		          	<div class="row m-lg-0 m-md-0 m-xs-0 pb-lg-2">
+					    <div class="color-swatch bd-main-green">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$main-green - #33b560</code>
+					    	</div>
+					    </div>
+					    <div class="color-swatch bd-secondary-green">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$secondary-green - #6dc76e</code>
+					    	</div>
+					    </div>
+					    <div class="color-swatch bd-main-yellow">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$main-yellow - #f7931e</code>
+					    	</div>
+					    </div>
+					    <div class="color-swatch bd-danger-brand">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$danger-brand - #f44040</code>
+					    	</div>
+					    </div>
+		          	</div>
+		          	<div class="row m-lg-0 m-md-0 m-xs-0 pb-lg-2">
+					    <div class="color-swatch bd-gray-title">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$gray-title - #424242</code>
+					    	</div>
+					    </div>
+					    <div class="color-swatch bd-gray-subtitle">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$gray-subtitle - #767676</code>
+					    	</div>
+					    </div>
+					    <div class="color-swatch bd-gray-placeholder">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$gray-placeholder - #999999</code>
+					    	</div>
+					    </div>
+					    <div class="color-swatch bd-gray-outline">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$gray-outline - #cccccc</code>
+					    	</div>
+					    </div>
+					    <div class="color-swatch bd-gray-bg">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$gray-bg - #f2f2f2</code>
+					    	</div>
+					    </div>
+					    <div class="color-swatch bd-gray-hover">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$gray-hover - #b3b3b3</code>
+					    	</div>
+					    </div>
+					    
+		          	</div>
+		          	
+				  </div>
+		        </div>
+		        <div class="tab-pane fade" id="main-nav" role="tabpanel" aria-labelledby="main-nav">
+		        	<h3>Main Nav</h3>
+					    <div class="top-bar p-lg-2">
+					        <a href="" class="systemLogo navbar-brand"></a>
+
+					        <!-- User dropdown -->
+					        <a class="nav-link dropdown-toggle position-absolute right-0 link-brand" id="menu-user" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					            Supervisor
+					        </a>  
+
+				            <div class="dropdown-menu dropdown-menu-user" aria-labelledby="menu-user">
+				                <a class="dropdown-item d-inline p-1 float-none" href="#">julian.bersano@gmail.com</a>
+				                <a class="dropdown-item d-inline p-1 float-none" href="#">Perfil</a>
+				                <a class="dropdown-item d-inline p-1 float-none" href="#">Configuración</a>                
+				                <div class="dropdown-divider"></div>
+
+				                <a class="dropdown-item d-inline p-1 float-none" href="#">Manual de ayuda</a>
+				                <a class="dropdown-item d-inline p-1 float-none" href="#">Glosario</a>
+				                <a class="dropdown-item d-inline p-1 float-none" href="#">Cerrar sesión</a>
+				            </div>
+
+					</div>
+					<div class="clearfix"></div>
+            
+					<div id="mainMenuH">
+					    
+					    <nav class="navbar navbar-expand-lg">
+					        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="true" aria-label="Toggle navigation">
+					            
+					                <i class="fas fa-bars"></i>
+					            
+					        </button>
+
+					        <div class="collapse navbar-collapse" id="navbarMain">
+					            <ul class="navbar-nav mr-auto">
+					               
+					                <li class="nav-item">
+					                    <a class="nav-link" href="#" id="" role="button" aria-haspopup="true" aria-expanded="false">
+					                    Inicio
+					                    </a>
+					                </li>
+
+					                <li class="nav-item dropdown current show">
+					                    <a class="nav-link dropdown-toggle no-chev" href="#" id="sub-menu-1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					                    Planificación
+					                    </a>
+					                    
+					                    <div class="dropdown-menu mt-0 show" aria-labelledby="sub-menu-1">
+					                        <div class="d-flex flex-row">
+					                            <a class="dropdown-item d-inline p-1 float-left" href="">Objetivos y Metas de Desarrollo Sostenible</a>
+					                            <a class="dropdown-item d-inline p-1 float-left" href="">Objetivos de Gobierno e Iniciativas Prioritarias</a>
+					                            <a class="dropdown-item d-inline p-1 float-left" href="">Lineamientos y Objetivos Ministeriales</a>
+					                            <a class="dropdown-item d-inline p-1 float-left active" href="">Proyectos</a>
+					                            <a class="dropdown-item d-inline p-1 float-left" href="">Análisis</a>
+					                        </div>
+					                    </div>
+					                </li>
+
+					                <li class="nav-item dropdown">
+					                    <a class="nav-link dropdown-toggle no-chev" href="#" id="sub-menu-2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					                    Seguimiento
+					                    </a>
+					                    
+					                    <div class="dropdown-menu mt-0" aria-labelledby="sub-menu-2">
+					                        <div class="d-flex flex-row">
+					                            <a class="dropdown-item d-inline p-1 float-left" href="">Objetivos y Metas de Desarrollo Sostenible</a>
+					                            <a class="dropdown-item d-inline p-1 float-left" href="">Objetivos de Gobierno e Iniciativas Prioritarias</a>
+					                            <a class="dropdown-item d-inline p-1 float-left" href="">Lineamientos y Objetivos Ministeriales</a>
+					                            <a class="dropdown-item d-inline p-1 float-left" href="">Proyectos</a>
+					                        </div>
+					                    </div>
+					                </li>
+
+					                <li class="nav-item dropdown">
+					                    <a class="nav-link dropdown-toggle no-chev" href="#" id="sub-menu-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					                    Reportes
+					                    </a>
+					                    
+					                    <div class="dropdown-menu mt-0" aria-labelledby="sub-menu-3">
+					                        <div class="d-flex flex-row">
+					                            <a class="dropdown-item d-inline p-1" href="">Objetivos y Metas de Desarrollo Sostenible</a>
+					                            <a class="dropdown-item d-inline p-1" href="t">Objetivos de Gobierno e Iniciativas Prioritarias</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Planificación Estratégica</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Monitoreo Estratégico</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Proyectos</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Actividades y Subactividades</a>
+					                        </div>
+					                    </div>
+					                </li>
+
+					                <li class="nav-item dropdown">
+					                    <a class="nav-link dropdown-toggle no-chev" href="#" id="sub-menu-4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					                    Administración
+					                    </a>
+					                    
+					                    <div class="dropdown-menu mt-0" aria-labelledby="sub-menu-4">
+					                        <div class="d-flex flex-row">
+					                            <a class="dropdown-item d-inline p-1" href="">Organigrama</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Regiones y provincias</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Funcionarios</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Usuarios</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Grupos de Usuarios</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Niveles Usuarios</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Objetivos y Metas de Desarrollo Sostenible</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Objetivos de Gobierno e Iniciativas Prioritarias</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Etiquetas de proyectos</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Histórico de Operaciones</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Generación de Template de Importación</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Respaldos</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Actualizar archivo de ayuda</a>
+					                        </div>
+					                    </div>
+					                </li>
+
+					                <li class="nav-item dropdown">
+					                    <a class="nav-link dropdown-toggle no-chev" href="#" id="sub-menu-5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					                    Sistema
+					                    </a>
+					                    
+					                    <div class="dropdown-menu mt-0" aria-labelledby="sub-menu-5">
+					                        <div class="d-flex flex-row">
+					                            <a class="dropdown-item d-inline p-1" href="">Configurar Sistema</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Editar Configuración</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Administrar Alertas</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Histórico de Alertas</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Administrar Permisos</a>
+					                            <a class="dropdown-item d-inline p-1" href="">Importar Entidades</a>
+					                        </div>
+					                    </div>
+					                </li>
+					                <li id="proyect-range" class="nav-item dropdown position-absolute right-0">
+										<a class="nav-link dropdown-toggle link-brand" href="#" id="sub-menu-6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					                        PROYECTOS VIGENTES <b>2017</b> - <b>2020</b>
+					                    </a>
+										 <div class="dropdown-menu date-range p-lg-2 row" aria-labelledby="sub-menu-6">
+											
+										<div class="item-range justify-content-center pt-lg-2 pl-lg-4 pr-lg-4 pl-lg-2 col" id="startingYearPicker">
+												Desde<br>
+											<span onclick="decStartingYear()">
+												<i class="fa fa-angle-left" style="font-weight: bolder;  cursor: pointer;"></i>
+											</span>
+											<span class="year">2017</span>
+											<span onclick="incStartingYear()">
+												<i class="fa fa-angle-right" style="font-weight: bolder; cursor: pointer;"></i>
+											</span>
+										</div>
+										<div class="item-range justify-content-center pt-lg-2 pl-lg-4 pr-lg-4 pl-lg-2 col" id="endingYearPicker">
+											Hasta<br>
+											<span onclick="decEndingYear()"><i class="fa fa-angle-left" style="font-weight: bolder;  cursor: pointer;"></i></span>
+											<span class="year">2020</span>
+											<span onclick="incEndingYear()"><i class="fa fa-angle-right" style="font-weight: bolder; cursor: pointer;"></i></span>
+										</div>
+										<br>
+										<div class="pt-lg-2 pl-lg-4 pr-lg-4 pl-lg-2 row">
+											<button type="button" class="btn btn-primary btn-primary-brand" onclick="submitYears()">APLICAR</button>
+										</div>
+
+										</div>
+									</li>
+					            </ul>
+					        </div>
+					    </nav>
+
+					</div>
+
+		            <div class="dropdown-menu dropdown-menu-user p-lg-0" aria-labelledby="menu-user">
+		                <a class="dropdown-item d-inline p-1 float-none" href="#">|</a>
+		                <a class="dropdown-item d-inline p-1 float-none" href="">Perfil</a>
+		                <a class="dropdown-item d-inline p-1 float-none" href="">Configuración</a>
+		                
+		                <div class="dropdown-divider"></div>
+
+		                <a class="dropdown-item d-inline p-1 float-none" href="" target="_blank">Manual de ayuda</a>
+		                <a class="dropdown-item d-inline p-1 float-none" href="" target="_blank">Glosario</a>
+		                <a class="dropdown-item d-inline p-1 float-none" href="">Cerrar sesión</a>
+		            </div>
+
+		            
+
+
+
+
+
+		        </div>
+		        <div class="tab-pane fade" id="Pagination" role="tabpanel" aria-labelledby="Pagination">
+		        	<h3>Paginación</h3>
+
+					<div class="mx-auto inline-block" id="div_paginate">
+						<nav class="pt-lg-3 pl-lg-3 pr-lg-3 pb-lg-3" aria-label="...">
+							<ul class="pagination nav justify-content-center pagination-lg">
+								<li class="page-item  disabled">
+									<a class="page-link rounded disabled">Inicio</a>
+								</li>
+			 					<li class=" page-item disabled">
+									<a class="page-link rounded disabled">
+										Anterior
+									</a>
+								</li>
+
+								<a class="page-link rounded link-brand" href="">1</a>
+								<li class="page-item active">
+									<a href="" class="rounded page-link">
+										2
+									</a>
+								</li>
+								<li class="page-item ">
+									<a href="" class="rounded page-link link-brand">
+										3
+									</a>
+								</li>
+								<li class="page-item ">
+									<a href="" class="rounded page-link link-brand">
+										4
+									</a>
+								</li>
+								<li class="page-item ">
+									<a href="" class="rounded page-link link-brand">
+										5
+									</a>
+								</li>
+								<li class="page-item ">
+									<a href="" class="rounded page-link link-brand">
+										6
+									</a>
+								</li>
+								<li class="page-item ">
+									<a href="" class="page-link rounded link-brand">Siguiente</a>
+								</li>
+								<li class="page-item ">
+									<a class="page-link rounded link-brand" href="">Última</a>
+								</li>
+							</ul>
+						</nav>
+
+					</div>
+
+		        </div>
+
+		        <div class="tab-pane fade" id="Buttons" role="tabpanel" aria-labelledby="Buttons">
+		        	<h3>Botones</h3>
+		          <p>Ejemplos</p>
+				<div class="bd-example">
+					<button type="button" class="btn btn-primary btn-primary-brand">Primary</button>
+					<button type="button" class="btn btn-link btn-link-brand">Secondary</button>
+					<button type="button" class="btn btn-warning btn-warning-brand">Warning</button>
+					<button type="button" class="btn btn-danger btn-danger-brand">Danger</button>
+					<button type="button" class="btn btn-outline-primary btn-outline-primary-brand">Outline Btn</button>
+					<button type="button" class="btn btn-outline-primary btn-outline-primary-brand"><i class="fa fa-home"></i> Outline icon</button>
+					<button type="button" class="btn btn-primary btn-primary-brand" disabled>Primary Disabled</button>
+
+				</div>
+				<div class="highlight">
+					<pre> 
+ <code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-primary-brand"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+ <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link btn-link-brand"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span></code>
+ <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning btn-warning-brand"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+ <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger btn-danger-brand"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+ <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-outline-primary-brand"</span><span class="nt">&gt;</span>Outline Btn<span class="nt">&lt;/button&gt;</span>
+ <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-outline-primary-brand"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;i</span> <span class="na"><span class="na">class=</span><span class="s">"fa fa-home"</span><span class="nt">&gt;</span><span class="nt">&lt;/i</span></span><span class="nt">&gt;</span> Outline icon
+ <span class="nt">&lt;/button&gt;</span>
+ <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-primary-brand"</span><span class="na">disabled</span><span class="nt">&gt;</span>Primary Disabled<span class="nt">&lt;/button&gt;</span>
+
+					</pre>
+				</div>
+
+
+		        </div>
+				<div class="tab-pane fade" id="Modal" role="tabpanel" aria-labelledby="Modal">
+					<h3>Modal</h3>
+ 					<p>Ejemplos</p>		         	
+ 					<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary btn-primary-brand" data-toggle="modal" data-target="#exampleModal">
+					  Ver modal demo
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					      		<form>
+								   <div class="form-group">
+								    <label for="exampleFormControlInput1" class="form-text">EMAIL</label>
+								    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleFormControlSelect1" class="form-text">OBJETIVO DE GOBIERNO</label>
+								    <select class="custom-select" id="exampleFormControlSelect1">
+								      <option>Todos</option>
+								      <option>1. Estabilidad Macroeconómica</option>
+								      <option>2. Acuerdo Productivo Nacional</option>
+								      <option>3. Desarrollo de Infraestructura</option>
+								      <option>4. Desarrollo Humano Sustentable</option>
+								    </select>
+								  </div>
+								</form>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-link btn-link-brand" data-dismiss="modal">Cerrar</button>
+					        <button type="button" class="btn btn-primary btn-primary-brand">Ingresar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+		         	<!-- Button trigger modal -->
+					<button type="button" class="btn btn-primary btn-primary-brand" data-toggle="modal" data-target="#exampleModalWarning">
+					  Ver delete modal
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade modal-warning-brand" id="exampleModalWarning" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					    	 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      <div class="modal-header">
+					      	<h5 class="modal-title text-danger-brand pb-lg-2">¿Seguro querés borrar el proyecto?</h5>
+					       
+					      </div>
+					      <div class="modal-body">
+					        
+					        <p>Si lo hacés, no podrás recuperarlo</p>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-link btn-link-brand" data-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-danger btn-danger-brand">Si, borrar</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+
+				</div>
+
+		        <div class="tab-pane fade" id="Tables" role="tabpanel" aria-labelledby="Tables">
+					<h3>Tablas</h3>
+		         	 <p>Ejemplos</p>
+		         	
+		         	<button id="full-table" class="btn btn-primary btn-primary-brand" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					    ver tabla full
+					</button>
+
+		         	<div class="bd-example">
+						<table class="table table-striped table-responsive-xl table-brand">
+						  <thead>
+						    <tr>
+						      <th scope="col" style="width:20%">Lineamiento</th>
+						      <th scope="col" style="width:22%">Objetivo Ministerial</th>
+						      <th scope="col" style="width:15%">Proyecto</th>
+						      <th scope="col" style="width:10%">Fecha inicio de Planificación</th>
+						      <th scope="col" style="width:10%">Fecha fin de Planificación</th>
+						      <th scope="col" style="width:7%">Estado</th>
+						      <th scope="col" style="width:16%;">Edición</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <td>1 Lineamiento 2017-2019</td>
+						      <td>
+						      	<span  style="max-width: 150px;">
+ 									1.1 Promover la toma de decisiones en política social basada en evidencia
+								</span>
+							  </td>
+						      <td><a href="">1.1.7 Prueba de Proyectos</a></td>
+						      <td align="center">20-09-2018</td>
+						      <td align="center">22-08-2019</td>
+						      <td><span class="badge badge-pill badge-secondary badge6">PLANIFICACIÓN EN PROCESO</span></td>
+						      <td style="text-align:right;">
+						      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+								<button type="button" class="btn btn-link btn-link-brand">Borrar</button>
+							  </td>
+						    </tr>
+						    <tr>
+						      <td>4 Modernizar y fortalecer a la Cancillería.</td>
+						      <td>4.3 Modernizar los procesos de la gestión</td>
+						      <td><a href="">4.3.6 Test</a></td>
+						      <td align="center">20-09-2018</td>
+						      <td align="center">22-08-2019</td>
+						      <td><span class="badge badge-pill badge-secondary badge8">PENDIENTE DE ANÁLISIS MINISTERIO</span></td>
+						      <td style="text-align:right;">
+						      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+								<button type="button" class="btn btn-link btn-link-brand">Borrar</button>
+							  </td>
+						    </tr>
+						    <tr>
+						      <td>7 Lineamiento 2019-2020</td>
+						      <td>7.1 Obj 19-19</td>
+						      <td><a href="">7.1.1 Proyecto 2019</a></td>
+						      <td align="center">
+						      	
+						      		20-10-2018	
+
+						      </td>
+						      <td align="center">31-01-2020</td>
+						      <td><span class="badge badge-pill badge-secondary badge5">PLANIFICACIÓN REABIERTA</span></td>
+						      <td style="text-align:right;">
+						      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+								<button type="button" class="btn btn-link btn-link-brand">Borrar</button>
+							  </td>
+						    </tr>
+						    <tr>
+						      <td>1 LE1. Proveer infraestructura para el desarrollo humano y productivo</td>
+						      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
+						      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
+						      <td align="center">01-01-2017</td>
+						      <td align="center">31-12-2017</td>
+						      <td><span class="badge badge-pill badge-secondary badge7">PLANIFICACIÓN FINALIZADA</span></td>
+						      <td style="text-align:right;">
+						      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+								<button type="button" class="btn btn-link btn-link-brand">Borrar</button>
+							  </td>
+						    </tr>
+						    <tr>
+						      <td>Racionalizar la gestión de bienes y personal...</td>
+						      <td>1.1 Optimizar planta de personal civil y militar dependiente </td>
+						      <td><a href="">1.1.4 Planificacion en Proceso - M DEFENSA</a></td>
+						      <td align="center">01-01-2017</td>
+						      <td align="center">31-12-2017</td>
+						      <td><span class="badge badge-pill badge-secondary badge2">REVISAR PARA JGM</span></td>
+						      <td style="text-align:right;">
+						      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+								<button type="button" class="btn btn-link btn-link-brand">Borrar</button>
+							  </td>
+						    </tr>
+						    <tr>
+						      <td>Defender los intereses y los derechos...</td>
+						      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
+						      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
+						      <td align="center">01-01-2017</td>
+						      <td align="center">31-12-2017</td>
+						      <td><span class="badge badge-pill badge-secondary badge9">REVISAR</span></td>
+						      <td style="text-align:right;">
+						      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+								<button type="button" class="btn btn-link btn-link-brand">Borrar</button>
+							  </td>
+						    </tr>
+
+						  </tbody>
+						</table>
+						<div class="mx-auto inline-block font-weight-bold ml-lg-4">
+						 	Página: 2 de 98
+						</div>
+						<div class="mx-auto inline-block" id="div_paginate">
+							<nav class="pt-lg-3 pl-lg-3 pr-lg-3 pb-lg-3" aria-label="...">
+								<ul class="pagination nav justify-content-center pagination-lg">
+									<li class="page-item  disabled">
+										<a class="page-link rounded disabled">Inicio</a>
+									</li>
+				 					<li class=" page-item disabled">
+										<a class="page-link rounded disabled">
+											Anterior
+										</a>
+									</li>
+
+									<a class="page-link rounded link-brand" href="">1</a>
+									<li class="page-item active">
+										<a href="" class="rounded page-link">
+											2
+										</a>
+									</li>
+									<li class="page-item ">
+										<a href="" class="rounded page-link link-brand">
+											3
+										</a>
+									</li>
+									<li class="page-item ">
+										<a href="" class="rounded page-link link-brand">
+											4
+										</a>
+									</li>
+									<li class="page-item ">
+										<a href="" class="rounded page-link link-brand">
+											5
+										</a>
+									</li>
+									<li class="page-item ">
+										<a href="" class="rounded page-link link-brand">
+											6
+										</a>
+									</li>
+									<li class="page-item ">
+										<a href="" class="page-link rounded link-brand">Siguiente</a>
+									</li>
+									<li class="page-item ">
+										<a class="page-link rounded link-brand" href="">Última</a>
+									</li>
+								</ul>
+							</nav>
+
+					</div>
+
+					</div>
+
+		        </div>
+
+		        <div class="tab-pane fade" id="Forms" role="tabpanel" aria-labelledby="Forms">
+					<h3>Forms</h3>
+		         	 <p>Ejemplos</p>
+
+		         	<div class="bd-example">
+         				<h3 class="page-sub-title">Detalles del Proyecto</h3>
+
+		         		<div class="row">
+		         			<div class="col-lg-4">
+				         		<form>
+								  <div class="form-group">
+								    <label for="exampleFormControlInput1" class="form-text">EMAIL</label>
+								    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+								  </div>
+
+
+
+
+
+								  <div class="form-group">
+								    <label for="exampleFormControlSelect1" class="form-text">OBJETIVO DE GOBIERNO</label>
+								    <select class="custom-select" id="exampleFormControlSelect1">
+								      <option selected>Todos</option>
+								      <option>1. Estabilidad Macroeconómica</option>
+								      <option>2. Acuerdo Productivo Nacional</option>
+								      <option>3. Desarrollo de Infraestructura</option>
+								      <option>4. Desarrollo Humano Sustentable</option>
+								    </select>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleFormControlSelect2" class="form-text">Ejemplo multiple select</label>
+								    <select multiple class="form-control" id="exampleFormControlSelect2">
+								      <option>AABE</option>
+								      <option>ACUMAR</option>
+								      <option>AFIP</option>
+								      <option>Agroindustria</option>
+								      <option>Ambiente</option>
+								    </select>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleFormControlTextarea1" class="form-text">Ejemplo textarea</label>
+								    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								  </div>
+
+								  <div class="form-group">
+								  	<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customCheck1">
+										<label class="custom-control-label" for="customCheck1">Ejemplo custom checkbox</label>
+									</div>
+								  </div>
+
+  								  <div class="form-group">
+	  								<div class="custom-control custom-radio">
+										<input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+										<label class="custom-control-label" for="customRadio1">Ejemplo custom radio</label>
+									</div>
+								  </div>
+
+								<div class="form-group">
+									<div class="custom-control custom-radio">
+										<input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+										<label class="custom-control-label" for="customRadio2">Ejemplo custom radio</label>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customCheckDisabled" disabled>
+										<label class="custom-control-label" for="customCheckDisabled">Disabled checkbox</label>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="custom-control custom-radio">
+										<input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
+										<label class="custom-control-label" for="customRadioDisabled">Disabled radio</label>
+									</div>
+								</div>
+								<div class="custom-file">
+								  <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+								  <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+								</div>
+
+
+								  
+								</form>
+		         			</div>
+		         			<div class="col-lg-4">
+								<div class="form-group">
+								  <form>
+									  <fieldset disabled>
+									    <div class="form-group">
+									      <label for="disabledTextInput" class="form-text">Disabled input</label>
+									      <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+									    </div>
+									    <div class="form-group">
+									      <label for="disabledSelect" class="form-text">Disabled select menu</label>
+									      <select id="disabledSelect" class="custom-select">
+									        <option>Disabled select</option>
+									      </select>
+									    </div>
+									    
+									  </fieldset>
+									</form>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1" class="form-text">Requerido</label>
+									<input type="email" class="form-control" id="exampleInputEmail1"  required>
+									<small id="exampleInputEmail1" class="text-danger-brand">Campo obligatorio</small>
+								</div>
+
+		         			</div>
+		         		</div>
+					</div>
+
+		        </div>
+
+
+		        <div class="tab-pane fade" id="Accordion" role="tabpanel" aria-labelledby="Accordion">
+					<h3>Accordion</h3>
+					 <p>Ejemplos</p>
+
+					<div class="accordion-container" id="accordion">
+					  <div class="card">
+					    <div class="card-header" id="headingOne">
+					      <h5 class="mb-0">
+					        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					          Grupo #1
+					        </button>
+					      </h5>
+					    </div>
+
+					    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+					      <div class="card-body">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card border-top-0 ">
+					    <div class="card-header" id="headingTwo">
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					          Grupo #2
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					      <div class="card-body">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					  <div class="card border-top-0">
+					    <div class="card-header" id="headingThree">
+					      <h5 class="mb-0">
+					        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					          Grupo #3
+					        </button>
+					      </h5>
+					    </div>
+					    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					      <div class="card-body">
+					        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+				</div>
+
+		        <div class="tab-pane fade" id="Tabs" role="tabpanel" aria-labelledby="Tabs">
+					<h3>Tabs</h3>
+					 <p>Ejemplos</p>
+
+					<div class="row mr-lg-0 ml-lg-0 p-lg-2 bg-dark-brand">
+						<div class="col-lg-3">
+							<span class="text-dark font-weight-bold">Objetivo de Desarrollo Sostenible</span>
+						</div>
+						<div class="col-lg-9">
+							<span class="text-dark font-weight-bold">Meta ODS</span>
+							
+						</div>
+					</div>
+
+
+					<div class="row">
+						<div class="col-lg-3 pr-lg-0">
+							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+								<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Estabilidad Macroeconómica</a>
+								<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">2. Acuerdo Productivo Nacional</a>
+								<h3 class="p-lg-2 bg-secondary-brand text-black block subtitle-table">Hacienda</h3>
+
+								<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">3. Desarrollo de Infraestructura</a>
+								<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Desarrollo Humano Sustentable</a>
+							</div>
+
+						</div>
+						<div class="col-lg-9 pl-lg-0">
+							<div class="tab-content" id="v-pills-tabContent">
+								<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+									<table class="table table-striped table-responsive-xl table-brand">
+									  <thead>
+									    <tr>
+									      <th scope="col" style="width:17%">Lineamiento</th>
+									      <th scope="col" style="width:24%">Objetivo Ministerial</th>
+									      <th scope="col" style="width:15%">Proyecto</th>
+									      <th scope="col" style="width:10%">Fecha inicio de Planificación</th>
+									      <th scope="col" style="width:10%">Fecha fin de Planificación</th>
+									      <th scope="col" style="width:10%">Estado</th>
+									      <th scope="col" style="width:14%;">Edición</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+									      <td>4 Modernizar y fortalecer a la Cancillería.</td>
+									      <td>4.3 Modernizar los procesos de la gestión</td>
+									      <td><a href="">4.3.6 Test</a></td>
+									      <td align="center">20-09-2018</td>
+									      <td align="center">22-08-2019</td>
+									      <td><span class="badge badge-pill badge-secondary badge8">PENDIENTE DE ANÁLISIS MINISTERIO</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>7 Lineamiento 2019-2020</td>
+									      <td>7.1 Obj 19-19</td>
+									      <td><a href="">7.1.1 Proyecto 2019</a></td>
+									      <td align="center">
+									      	
+									      		20-10-2018	
+
+									      </td>
+									      <td align="center">31-01-2020</td>
+									      <td><span class="badge badge-pill badge-secondary badge5">PLANIFICACIÓN REABIERTA</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>1 LE1. Proveer infraestructura para el desarrollo humano</td>
+									      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
+									      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge7">PLANIFICACIÓN FINALIZADA</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>Racionalizar la gestión de bienes y personal...</td>
+									      <td>1.1 Optimizar planta de personal civil y militar dependiente de las Fuerzas Armadas</td>
+									      <td><a href="">1.1.4 Planificacion en Proceso - M DEFENSA</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge2">REVISAR PARA JGM</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>Defender los intereses y los derechos...</td>
+									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
+									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge9">REVISAR</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+
+									  </tbody>
+									</table>
+
+
+								</div>
+								<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+									<table class="table table-striped table-responsive-xl table-brand">
+									  <thead>
+									    <tr>
+									      <th scope="col" style="width:15%">Lineamiento</th>
+									      <th scope="col" style="width:22%">Objetivo Ministerial</th>
+									      <th scope="col" style="width:15%">Proyecto</th>
+									      <th scope="col" style="width:10%">Fecha inicio de Planificación</th>
+									      <th scope="col" style="width:10%">Fecha fin de Planificación</th>
+									      <th scope="col" style="width:10%">Estado</th>
+									      <th scope="col" style="width:18%;">Edición</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+									      <td>1 Lineamiento 2017-2019</td>
+									      <td>
+									      	<span  style="max-width: 150px;">
+			 									1.1 Promover la toma de decisiones en política social basada en evidencia
+											</span>
+										  </td>
+									      <td><a href="">1.1.7 Prueba de Proyectos</a></td>
+									      <td align="center">20-09-2018</td>
+									      <td align="center">22-08-2019</td>
+									      <td><span class="badge badge-pill badge-secondary badge6">PLANIFICACIÓN EN PROCESO</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>4 Modernizar y fortalecer a la Cancillería.</td>
+									      <td>4.3 Modernizar los procesos de la gestión</td>
+									      <td><a href="">4.3.6 Test</a></td>
+									      <td align="center">20-09-2018</td>
+									      <td align="center">22-08-2019</td>
+									      <td><span class="badge badge-pill badge-secondary badge8">PENDIENTE DE ANÁLISIS MINISTERIO</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>7 Lineamiento 2019-2020</td>
+									      <td>7.1 Obj 19-19</td>
+									      <td><a href="">7.1.1 Proyecto 2019</a></td>
+									      <td align="center">
+									      	
+									      		20-10-2018	
+
+									      </td>
+									      <td align="center">31-01-2020</td>
+									      <td><span class="badge badge-pill badge-secondary badge5">PLANIFICACIÓN REABIERTA</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>1 LE1. Proveer infraestructura para el desarrollo</td>
+									      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar </td>
+									      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge7">PLANIFICACIÓN FINALIZADA</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>Defender los intereses y los derechos...</td>
+									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
+									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge9">REVISAR</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+
+									  </tbody>
+									</table>
+
+
+								</div>
+								<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+									<table class="table table-striped table-responsive-xl table-brand">
+									  <thead>
+									    <tr>
+									      <th scope="col" style="width:15%">Lineamiento</th>
+									      <th scope="col" style="width:22%">Objetivo Ministerial</th>
+									      <th scope="col" style="width:15%">Proyecto</th>
+									      <th scope="col" style="width:10%">Fecha inicio de Planificación</th>
+									      <th scope="col" style="width:10%">Fecha fin de Planificación</th>
+									      <th scope="col" style="width:10%">Estado</th>
+									      <th scope="col" style="width:18%;">Edición</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+									      <td>1 Lineamiento 2017-2019</td>
+									      <td>
+									      	<span  style="max-width: 150px;">
+			 									1.1 Promover la toma de decisiones en política social basada en evidencia
+											</span>
+										  </td>
+									      <td><a href="">1.1.7 Prueba de Proyectos</a></td>
+									      <td align="center">20-09-2018</td>
+									      <td align="center">22-08-2019</td>
+									      <td><span class="badge badge-pill badge-secondary badge6">PLANIFICACIÓN EN PROCESO</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>4 Modernizar y fortalecer a la Cancillería.</td>
+									      <td>4.3 Modernizar los procesos de la gestión</td>
+									      <td><a href="">4.3.6 Test</a></td>
+									      <td align="center">20-09-2018</td>
+									      <td align="center">22-08-2019</td>
+									      <td><span class="badge badge-pill badge-secondary badge8">PENDIENTE DE ANÁLISIS MINISTERIO</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>7 Lineamiento 2019-2020</td>
+									      <td>7.1 Obj 19-19</td>
+									      <td><a href="">7.1.1 Proyecto 2019</a></td>
+									      <td align="center">
+									      	
+									      		20-10-2018	
+
+									      </td>
+									      <td align="center">31-01-2020</td>
+									      <td><span class="badge badge-pill badge-secondary badge5">PLANIFICACIÓN REABIERTA</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>1 LE1. Proveer infraestructura para el desarrollo</td>
+									      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
+									      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge7">PLANIFICACIÓN FINALIZADA</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>Racionalizar la gestión de bienes y personal...</td>
+									      <td>1.1 Optimizar planta de personal civil y militar dependiente </td>
+									      <td><a href="">1.1.4 Planificacion en Proceso - M DEFENSA</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge2">REVISAR PARA JGM</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>Defender los intereses y los derechos...</td>
+									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
+									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge9">REVISAR</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>Defender los intereses y los derechos...</td>
+									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
+									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge9">REVISAR</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>Defender los intereses y los derechos...</td>
+									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
+									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge9">REVISAR</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+
+									  </tbody>
+									</table>
+
+
+								</div>
+								<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+									<table class="table table-striped table-responsive-xl table-brand">
+									  <thead>
+									    <tr>
+									      <th scope="col" style="width:15%">Lineamiento</th>
+									      <th scope="col" style="width:22%">Objetivo Ministerial</th>
+									      <th scope="col" style="width:15%">Proyecto</th>
+									      <th scope="col" style="width:10%">Fecha inicio de Planificación</th>
+									      <th scope="col" style="width:10%">Fecha fin de Planificación</th>
+									      <th scope="col" style="width:10%">Estado</th>
+									      <th scope="col" style="width:18%;">Edición</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+									      <td>1 Lineamiento 2017-2019</td>
+									      <td>
+									      	<span  style="max-width: 150px;">
+			 									1.1 Promover la toma de decisiones en política social basada en evidencia
+											</span>
+										  </td>
+									      <td><a href="">1.1.7 Prueba de Proyectos</a></td>
+									      <td align="center">20-09-2018</td>
+									      <td align="center">22-08-2019</td>
+									      <td><span class="badge badge-pill badge-secondary badge6">PLANIFICACIÓN EN PROCESO</span></td>
+									      <td style="text-align:right;">
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>4 Modernizar y fortalecer a la Cancillería.</td>
+									      <td>4.3 Modernizar los procesos de la gestión</td>
+									      <td><a href="">4.3.6 Test</a></td>
+									      <td align="center">20-09-2018</td>
+									      <td align="center">22-08-2019</td>
+									      <td><span class="badge badge-pill badge-secondary badge8">PENDIENTE DE ANÁLISIS MINISTERIO</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>7 Lineamiento 2019-2020</td>
+									      <td>7.1 Obj 19-19</td>
+									      <td><a href="">7.1.1 Proyecto 2019</a></td>
+									      <td align="center">
+									      	
+									      		20-10-2018	
+
+									      </td>
+									      <td align="center">31-01-2020</td>
+									      <td><span class="badge badge-pill badge-secondary badge5">PLANIFICACIÓN REABIERTA</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+									    <tr>
+									      <td>1 LE1. Proveer infraestructura para el desarrollo humano y productivo</td>
+									      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
+									      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
+									      <td align="center">01-01-2017</td>
+									      <td align="center">31-12-2017</td>
+									      <td><span class="badge badge-pill badge-secondary badge7">PLANIFICACIÓN FINALIZADA</span></td>
+									      <td style="text-align:right;">
+									      	<button type="button" class="btn btn-primary btn-primary-brand">Editar</button>
+
+										  </td>
+									    </tr>
+
+									  </tbody>
+									</table>
+
+
+								</div>
+
+
+
+
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+
+		        <div class="tab-pane fade" id="Alerts" role="tabpanel" aria-labelledby="Alerts">
+					<h3>Alerts</h3>
+					 <p>Ejemplos</p>
+
+					<div class="alert alert-success alert-dismissible fade show" role="alert">
+					  <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry.
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+
+					<div class="alert alert-warning alert-dismissible fade show" role="alert">
+					  Lorem Ipsum is simply dummy text of the printing and <strong>typesetting</strong> industry.
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="alert alert-danger alert-dismissible fade show" role="alert">
+					  Lorem Ipsum is simply dummy text of the <strong>printing</strong> and typesetting industry.
+					  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					    <span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+
+
+				</div>
+
+		        <div class="tab-pane fade position-relative" id="Wizard" role="tabpanel" aria-labelledby="Wizard">
+					<h3>Wizard</h3>
+					 <p>Ejemplo</p>
+
+					<nav class="nav nav-pills nav-fill wizard">
+					  <a class="nav-item nav-link rounded-0 active" href="#">CREAR PROYECTO</a>
+					  <a class="nav-item nav-link rounded-0" href="#">CREAR META</a>
+					  <a class="nav-item nav-link rounded-0" href="#">CARGAR PRESUPUESTO</a>
+					  <a class="nav-item nav-link rounded-0" href="#">CREAR INDICADORES</a>
+					  <a class="nav-item nav-link rounded-0" href="#">CREAR ACTIVIDADES</a>
+					  <a class="nav-item nav-link rounded-0" href="#">PREVISUALIZAR</a>
+					</nav>
+
+						<div class="row">
+							<div class="col-lg-4 pl-lg-4">
+								<h3 class="page-sub-title pb-lg-3 pt-lg-3">Crear proyecto: Bienes, servicios y otros</h3>
+
+				         		<form>
+								  <div class="form-group">
+								    <label for="exampleFormControlInput1" class="form-text" >Nombre del Proyecto *</label>
+								    <input type="email" class="form-control" id="exampleFormControlInput1" required placeholder="">
+								    <small id="" class="text-danger-brand">Requerido</small>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleFormControlSelect1" class="form-text">OBJETIVO DE GOBIERNO</label>
+								    <select class="custom-select id="exampleFormControlSelect1">
+								      <option>Todos</option>
+								      <option>1. Estabilidad Macroeconómica</option>
+								      <option>2. Acuerdo Productivo Nacional</option>
+								      <option>3. Desarrollo de Infraestructura</option>
+								      <option>4. Desarrollo Humano Sustentable</option>
+								    </select>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleFormControlSelect2" class="form-text">Example multiple select</label>
+								    <select multiple class="form-control" id="exampleFormControlSelect2">
+								      <option>AABE</option>
+								      <option>ACUMAR</option>
+								      <option>AFIP</option>
+								      <option>Agroindustria</option>
+								      <option>Ambiente</option>
+								    </select>
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleFormControlTextarea1" class="form-text">Descripción</label>
+								    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+								  </div>
+
+								   <div class="form-group">
+								  	<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="customCheck11">
+										<label class="custom-control-label" for="customCheck11">Check this custom checkbox</label>
+									</div>
+								  </div>
+
+  								  
+
+									<div class="form-group">
+										<label for="exampleFormControlTextarea1" class="form-text">Fecha Inicio</label>
+										<input id="datepicker" width="276" value="02/04/2018" />
+									</div>
+
+									<div class="row">
+										<button type="button" class="btn btn-primary btn-primary-brand ml-lg-3" disabled>Guardar y Continuar</button>
+									</div>
+
+
+
+
+								  </div>
+								</form>
+								
+
+							</div>
+							<div class="col-lg-8"></div>
+						</div>
+
+
+				</div>
+
+
+
+
+
+
+
+		        
+
+
+		      </div>
+		    </div>
+		  </div>
+	</div>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.10/js/gijgo.min.js" type="text/javascript"></script>
+
+	<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+		var bootstrapButton = $.fn.button.noConflict() // return $.fn.button to previously assigned value
+		$.fn.bootstrapBtn = bootstrapButton            // give $().bootstrapBtn the Bootstrap functionality
+
+		$( document ).ready(function() {
+			$("#full-table").click(function(){
+        		$(".col-lg-10").toggleClass("col-lg-12");
+    		});
+		});
+		$('#datepicker').datepicker({
+		  uiLibrary: 'bootstrap4',
+		});
+	</script>
+
+
+</body>
+</html>
