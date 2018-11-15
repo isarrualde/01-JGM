@@ -38,9 +38,10 @@
 		      <div class="tab-content" id="v-pills-tabContent">
 		        <div class="tab-pane fade active show" id="Typography" role="tabpanel" aria-labelledby="Typography">
 		        	<h3>Tipografía</h3>
-		          <p>Usamos un Font Stack Nativo de Boostrap 4 que selecciona la mejor font-family para cada OS y dispositivo. <a target="_blank" href="https://getbootstrap.com/docs/4.1/content/reboot/#native-font-stack">Leer más</a> </p>
+		          <p>Roboto como principal y luego usamos un Font Stack Nativo de Boostrap 4 que selecciona la mejor font-family para cada OS y dispositivo. <a target="_blank" href="https://getbootstrap.com/docs/4.1/content/reboot/#native-font-stack">Leer más</a> </p>
 		          
-		       		<figure class="highlight"><pre><code class="language-sass" data-lang="sass"><span class="nv">$font-family-sans-serif</span><span class="p">:</span>
+		       		<figure class="highlight"><pre><code class="language-sass" data-lang="sass">  <span class="nv">$font-brand: 'Roboto', sans-serif;</span>
+  <span class="nv">$font-family-sans-serif</span><span class="p">:</span>
   <span class="c1">// Safari for OS X and iOS (San Francisco)</span>
   <span class="nt">-apple-system</span><span class="o">,</span>
   <span class="c1">// Chrome &lt; 56 for OS X (San Francisco)</span>
@@ -58,11 +59,14 @@
 						<div class="bd-example">
 							<h2 class="page-title">Titulo de página</h2>
 							<h3 class="page-sub-title">Subtitulo de ejemplo</h3>
+							<h3 class="page-sub-title">Parrafo</h3>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 
 						</div>
 						<div class="highlight">
 							<pre> <code class="language-html" data-lang="html"><span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"page-title"</span><span class="nt">&gt;</span>Titulo de página<span class="nt">&lt;/h2&gt;</span>
  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"page-sub-title"</span><span class="nt">&gt;</span>Subtitulo de ejemplo<span class="nt">&lt;/h3&gt;</span>
+ <span class="nt">&lt;p</span>&gt;</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took <br/> a galley of type and scrambled it to make a type specimen book.<span class="nt">&lt;/p&gt;</span>
 
 </code></pre></div>
 					</div>
@@ -325,6 +329,9 @@
 		                <a class="dropdown-item d-inline p-1 float-none" href="" target="_blank">Glosario</a>
 		                <a class="dropdown-item d-inline p-1 float-none" href="">Cerrar sesión</a>
 		            </div>
+<div class="clearfix"></div>
+		            <h2 class="page-title mt-lg-5"> Seguimiento: Lineamientos y objetivos ministeriales</h2>
+
 
 		            
 
@@ -474,14 +481,14 @@
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					      <div class="modal-header">
-					      	<h5 class="modal-title text-danger-brand pb-lg-2">¿Seguro querés borrar el proyecto?</h5>
+					      	<h4 class="modal-title text-danger-brand pb-lg-2">¿Seguro querés borrar el proyecto?</h4>
 					       
 					      </div>
 					      <div class="modal-body">
 					        
 					        <p>Si lo hacés, no podrás recuperarlo</p>
 					      </div>
-					      <div class="modal-footer">
+					      <div class="modal-footer pt-lg-0">
 					        <button type="button" class="btn btn-link btn-link-brand" data-dismiss="modal">Cancelar</button>
 					        <button type="button" class="btn btn-danger btn-danger-brand">Si, borrar</button>
 					      </div>
@@ -504,20 +511,20 @@
 						<table class="table table-striped table-responsive-xl table-brand">
 						  <thead>
 						    <tr>
-						      <th scope="col" style="width:20%">Lineamiento</th>
+						      <th scope="col" style="width:18%">Lineamiento</th>
 						      <th scope="col" style="width:22%">Objetivo Ministerial</th>
 						      <th scope="col" style="width:15%">Proyecto</th>
 						      <th scope="col" style="width:10%">Fecha inicio de Planificación</th>
 						      <th scope="col" style="width:10%">Fecha fin de Planificación</th>
 						      <th scope="col" style="width:7%">Estado</th>
-						      <th scope="col" style="width:16%;">Edición</th>
+						      <th scope="col" style="width:18%;">Edición</th>
 						    </tr>
 						  </thead>
 						  <tbody>
 						    <tr>
 						      <td>1 Lineamiento 2017-2019</td>
 						      <td>
-						      	<span  style="max-width: 150px;">
+						      	<span class="block text-truncate" style="width: 250px;">
  									1.1 Promover la toma de decisiones en política social basada en evidencia
 								</span>
 							  </td>
@@ -532,7 +539,11 @@
 						    </tr>
 						    <tr>
 						      <td>4 Modernizar y fortalecer a la Cancillería.</td>
-						      <td>4.3 Modernizar los procesos de la gestión</td>
+						      <td>
+						      	<span class="block text-truncate" style="width: 250px;">
+						      		4.3 Modernizar los procesos de la gestión
+						      	</span>
+						      </td>
 						      <td><a href="">4.3.6 Test</a></td>
 						      <td align="center">20-09-2018</td>
 						      <td align="center">22-08-2019</td>
@@ -560,7 +571,10 @@
 						    </tr>
 						    <tr>
 						      <td>1 LE1. Proveer infraestructura para el desarrollo humano y productivo</td>
-						      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
+						      <td>
+						      	<span class="block text-truncate" style="width: 250px;">
+									1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
+						      	</span>
 						      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
 						      <td align="center">01-01-2017</td>
 						      <td align="center">31-12-2017</td>
@@ -664,7 +678,7 @@
 		         			<div class="col-lg-4">
 				         		<form>
 								  <div class="form-group">
-								    <label for="exampleFormControlInput1" class="form-text">EMAIL</label>
+								    <label for="exampleFormControlInput1" class="form-text">Email</label>
 								    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 								  </div>
 
@@ -673,7 +687,7 @@
 
 
 								  <div class="form-group">
-								    <label for="exampleFormControlSelect1" class="form-text">OBJETIVO DE GOBIERNO</label>
+								    <label for="exampleFormControlSelect1" class="form-text">Objetivo de Gobierno</label>
 								    <select class="custom-select" id="exampleFormControlSelect1">
 								      <option selected>Todos</option>
 								      <option>1. Estabilidad Macroeconómica</option>
@@ -825,6 +839,10 @@
 		        <div class="tab-pane fade" id="Tabs" role="tabpanel" aria-labelledby="Tabs">
 					<h3>Tabs</h3>
 					 <p>Ejemplos</p>
+					 <button id="full-table-tabs" class="btn btn-primary btn-primary-brand" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+					    ver tabla full
+					</button>
+					<div class="row"><p></p></div>
 
 					<div class="row mr-lg-0 ml-lg-0 p-lg-2 bg-dark-brand">
 						<div class="col-lg-3">
@@ -840,12 +858,14 @@
 					<div class="row">
 						<div class="col-lg-3 pr-lg-0">
 							<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-								<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Estabilidad Macroeconómica</a>
-								<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">2. Acuerdo Productivo Nacional</a>
+								<a class="nav-link active p-lg-3" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">1. Estabilidad Macroeconómica <span>
+									<button type="button" class="btn btn-primary btn-primary-brand tab-edit">Editar</button>
+								</span></a>
+								<a class="nav-link p-lg-3" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">2. Acuerdo Productivo Nacional</a>
 								<h3 class="p-lg-2 bg-secondary-brand text-black block subtitle-table">Hacienda</h3>
 
-								<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">3. Desarrollo de Infraestructura</a>
-								<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Desarrollo Humano Sustentable</a>
+								<a class="nav-link p-lg-3" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">3. Desarrollo de Infraestructura</a>
+								<a class="nav-link p-lg-3" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">4. Desarrollo Humano Sustentable</a>
 							</div>
 
 						</div>
@@ -855,6 +875,7 @@
 									<table class="table table-striped table-responsive-xl table-brand">
 									  <thead>
 									    <tr>
+									      <th style="width:50px;">N°</th>
 									      <th scope="col" style="width:17%">Lineamiento</th>
 									      <th scope="col" style="width:24%">Objetivo Ministerial</th>
 									      <th scope="col" style="width:15%">Proyecto</th>
@@ -866,6 +887,7 @@
 									  </thead>
 									  <tbody>
 									    <tr>
+									      <td style="text-align:center;">1.1</td>
 									      <td>4 Modernizar y fortalecer a la Cancillería.</td>
 									      <td>4.3 Modernizar los procesos de la gestión</td>
 									      <td><a href="">4.3.6 Test</a></td>
@@ -877,6 +899,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>7 Lineamiento 2019-2020</td>
 									      <td>7.1 Obj 19-19</td>
 									      <td><a href="">7.1.1 Proyecto 2019</a></td>
@@ -892,6 +915,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>1 LE1. Proveer infraestructura para el desarrollo humano</td>
 									      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
 									      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
@@ -903,6 +927,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>Racionalizar la gestión de bienes y personal...</td>
 									      <td>1.1 Optimizar planta de personal civil y militar dependiente de las Fuerzas Armadas</td>
 									      <td><a href="">1.1.4 Planificacion en Proceso - M DEFENSA</a></td>
@@ -914,6 +939,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>Defender los intereses y los derechos...</td>
 									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
 									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
@@ -934,6 +960,7 @@
 									<table class="table table-striped table-responsive-xl table-brand">
 									  <thead>
 									    <tr>
+									    	<th style="width:50px;">N°</th>
 									      <th scope="col" style="width:15%">Lineamiento</th>
 									      <th scope="col" style="width:22%">Objetivo Ministerial</th>
 									      <th scope="col" style="width:15%">Proyecto</th>
@@ -945,6 +972,7 @@
 									  </thead>
 									  <tbody>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>1 Lineamiento 2017-2019</td>
 									      <td>
 									      	<span  style="max-width: 150px;">
@@ -960,6 +988,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>4 Modernizar y fortalecer a la Cancillería.</td>
 									      <td>4.3 Modernizar los procesos de la gestión</td>
 									      <td><a href="">4.3.6 Test</a></td>
@@ -971,6 +1000,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>7 Lineamiento 2019-2020</td>
 									      <td>7.1 Obj 19-19</td>
 									      <td><a href="">7.1.1 Proyecto 2019</a></td>
@@ -987,6 +1017,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>1 LE1. Proveer infraestructura para el desarrollo</td>
 									      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar </td>
 									      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
@@ -999,6 +1030,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>Defender los intereses y los derechos...</td>
 									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
 									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
@@ -1020,6 +1052,7 @@
 									<table class="table table-striped table-responsive-xl table-brand">
 									  <thead>
 									    <tr>
+									    	<th style="width:50px;">N°</th>
 									      <th scope="col" style="width:15%">Lineamiento</th>
 									      <th scope="col" style="width:22%">Objetivo Ministerial</th>
 									      <th scope="col" style="width:15%">Proyecto</th>
@@ -1031,6 +1064,7 @@
 									  </thead>
 									  <tbody>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>1 Lineamiento 2017-2019</td>
 									      <td>
 									      	<span  style="max-width: 150px;">
@@ -1047,6 +1081,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>4 Modernizar y fortalecer a la Cancillería.</td>
 									      <td>4.3 Modernizar los procesos de la gestión</td>
 									      <td><a href="">4.3.6 Test</a></td>
@@ -1059,6 +1094,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>7 Lineamiento 2019-2020</td>
 									      <td>7.1 Obj 19-19</td>
 									      <td><a href="">7.1.1 Proyecto 2019</a></td>
@@ -1075,6 +1111,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>1 LE1. Proveer infraestructura para el desarrollo</td>
 									      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
 									      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
@@ -1087,6 +1124,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>Racionalizar la gestión de bienes y personal...</td>
 									      <td>1.1 Optimizar planta de personal civil y militar dependiente </td>
 									      <td><a href="">1.1.4 Planificacion en Proceso - M DEFENSA</a></td>
@@ -1098,6 +1136,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>Defender los intereses y los derechos...</td>
 									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
 									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
@@ -1109,6 +1148,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>Defender los intereses y los derechos...</td>
 									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
 									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
@@ -1120,6 +1160,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>Defender los intereses y los derechos...</td>
 									      <td>2.3 Agilizar y Modernizar los procedimientos consulares</td>
 									      <td><a href="">1.1.5 prueba crear proyecto 2</a></td>
@@ -1141,6 +1182,7 @@
 									<table class="table table-striped table-responsive-xl table-brand">
 									  <thead>
 									    <tr>
+									    	<th style="width:50px;">N°</th>
 									      <th scope="col" style="width:15%">Lineamiento</th>
 									      <th scope="col" style="width:22%">Objetivo Ministerial</th>
 									      <th scope="col" style="width:15%">Proyecto</th>
@@ -1152,6 +1194,7 @@
 									  </thead>
 									  <tbody>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>1 Lineamiento 2017-2019</td>
 									      <td>
 									      	<span  style="max-width: 150px;">
@@ -1167,6 +1210,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>4 Modernizar y fortalecer a la Cancillería.</td>
 									      <td>4.3 Modernizar los procesos de la gestión</td>
 									      <td><a href="">4.3.6 Test</a></td>
@@ -1179,6 +1223,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>7 Lineamiento 2019-2020</td>
 									      <td>7.1 Obj 19-19</td>
 									      <td><a href="">7.1.1 Proyecto 2019</a></td>
@@ -1195,6 +1240,7 @@
 										  </td>
 									    </tr>
 									    <tr>
+									    	<td style="text-align:center;">1.1</td>
 									      <td>1 LE1. Proveer infraestructura para el desarrollo humano y productivo</td>
 									      <td>1.1 Adecuar la infraestructura aeroportuaria para duplicar la cantidad de pasajeros</td>
 									      <td><a href="">1.1.2 Proyecto Nuevo Transporte Prueba</a></td>
@@ -1276,7 +1322,7 @@
 								    <small id="" class="text-danger-brand">Requerido</small>
 								  </div>
 								  <div class="form-group">
-								    <label for="exampleFormControlSelect1" class="form-text">OBJETIVO DE GOBIERNO</label>
+								    <label for="exampleFormControlSelect1" class="form-text">Objetivo de Gobierno</label>
 								    <select class="custom-select id="exampleFormControlSelect1">
 								      <option>Todos</option>
 								      <option>1. Estabilidad Macroeconómica</option>
@@ -1361,6 +1407,9 @@
 
 		$( document ).ready(function() {
 			$("#full-table").click(function(){
+        		$(".col-lg-10").toggleClass("col-lg-12");
+    		});
+    		$("#full-table-tabs").click(function(){
         		$(".col-lg-10").toggleClass("col-lg-12");
     		});
 		});
