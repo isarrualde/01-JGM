@@ -7,6 +7,11 @@ a{
 		color:$secondary-blue;
 	}
 }
+
+.fill-gray-lighter {
+    background-color: #f4f4f4 !important;
+}
+
 .page-title{
     font-weight: 600;
     color: black;
@@ -571,6 +576,7 @@ a{
   }
   .navbar-toggler {
     border: 1px solid #ccc;
+
   }
   .nav-right {
     position: absolute;
@@ -669,12 +675,13 @@ a{
 .top-bar {
   #menu-user {
     margin-top: 22px;
-	margin-right: 15px;
+    margin-right: 24px;
   }
   a {
     cursor: pointer;
   }
 }
+
 
 // OLD styles
 
@@ -739,6 +746,17 @@ a{
 }
 .right-0{
   right: 0;
+}
+
+#v-pills-tab-sg{
+  .nav-link{
+    color:#222;
+  } 
+
+  .nav-link.active{
+    background-color:transparent;
+    color:#0f65ef;
+  }
 }
 
 .pagination-lg .page-link {
