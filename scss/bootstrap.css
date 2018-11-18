@@ -34,7 +34,7 @@
   --breakpoint-sm: 900px;
   --breakpoint-md: 1200px;
   --breakpoint-lg: 1368px;
-  --breakpoint-xl: 1200px;
+  --breakpoint-xl: 1500px;
   --font-family-sans-serif: ("Roboto", sans-serif), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
@@ -466,7 +466,7 @@ pre {
   @media (min-width: 1368px) {
     .container {
       max-width: 960px; } }
-  @media (min-width: 1200px) {
+  @media (min-width: 1500px) {
     .container {
       max-width: 1140px; } }
 
@@ -1059,7 +1059,7 @@ pre {
 
   .offset-lg-11 {
     margin-left: 91.6666666667%; } }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .col-xl {
     flex-basis: 0;
     flex-grow: 1;
@@ -1389,7 +1389,7 @@ pre {
     -ms-overflow-style: -ms-autohiding-scrollbar; }
     .table-responsive-lg > .table-bordered {
       border: 0; } }
-@media (max-width: 1199.98px) {
+@media (max-width: 1499.98px) {
   .table-responsive-xl {
     display: block;
     width: 100%;
@@ -3023,12 +3023,12 @@ input[type="button"].btn-block {
       flex-basis: auto; }
     .navbar-expand-lg .navbar-toggler {
       display: none; } }
-@media (max-width: 1199.98px) {
+@media (max-width: 1499.98px) {
   .navbar-expand-xl > .container,
   .navbar-expand-xl > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .navbar-expand-xl {
     flex-flow: row nowrap;
     justify-content: flex-start; }
@@ -4582,7 +4582,7 @@ button.bg-dark:focus {
 
   .d-lg-inline-flex {
     display: inline-flex !important; } }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .d-xl-none {
     display: none !important; }
 
@@ -5078,7 +5078,7 @@ button.bg-dark:focus {
 
   .align-self-lg-stretch {
     align-self: stretch !important; } }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .flex-xl-row {
     flex-direction: row !important; }
 
@@ -5216,7 +5216,7 @@ button.bg-dark:focus {
 
   .float-lg-none {
     float: none !important; } }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .float-xl-left {
     float: left !important; }
 
@@ -6314,7 +6314,7 @@ button.bg-dark:focus {
   .ml-lg-auto,
   .mx-lg-auto {
     margin-left: auto !important; } }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .m-xl-0 {
     margin: 0 !important; }
 
@@ -6611,7 +6611,7 @@ button.bg-dark:focus {
 
   .text-lg-center {
     text-align: center !important; } }
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .text-xl-left {
     text-align: left !important; }
 
