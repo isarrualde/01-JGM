@@ -7,6 +7,13 @@ a{
 		color:$secondary-blue;
 	}
 }
+.sidebar{
+  color: #fff;
+  background: #232629;
+  a{
+    color:#fff;
+  }
+}
 
 
 .vh100 {
@@ -761,12 +768,16 @@ a{
 
 #v-pills-tab-sg{
   .nav-link{
-    color:#222;
+    color:#878a8c;
+    margin-left:-15px;
+    margin-right:-15px;
+    padding: .85rem!important;
   } 
 
   .nav-link.active{
-    background-color:transparent;
-    color:#0f65ef;
+    opacity: 1!important;
+    color: #fff;
+    background: #171a1c;
   }
 }
 
