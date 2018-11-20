@@ -6829,6 +6829,9 @@ a {
   .sidebar a {
     color: #fff; }
 
+h4 {
+  font-weight: 300; }
+
 .vh100 {
   min-height: 100vh; }
 
@@ -7394,7 +7397,8 @@ a {
   color: #878a8c;
   margin-left: -15px;
   margin-right: -15px;
-  padding: 0.85rem !important; }
+  padding: 0.85rem !important;
+  font-weight: 300; }
 #v-pills-tab-sg .nav-link.active {
   opacity: 1 !important;
   color: #fff;
@@ -7478,10 +7482,25 @@ a {
   border-bottom: transparent;
   padding: .2rem .1rem; }
 
+.btn-multiple-select {
+  background-color: transparent;
+  border: transparent;
+  padding-left: 0; }
+
+.btn:focus, .btn.focus {
+  box-shadow: none; }
+
+.dm-ms {
+  width: 325px;
+  padding: 1.1rem; }
+  .dm-ms .last {
+    margin-bottom: 0; }
+
 #Tabs .nav-link {
   width: 100%;
   position: relative;
-  min-width: 240px; }
+  min-width: 240px;
+  font-size: .8rem; }
 #Tabs .nav-link.active:after {
   content: "";
   display: inline-block;

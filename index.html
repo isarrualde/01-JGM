@@ -19,7 +19,7 @@
 
 	
 		<div class="row">
-		    <div class="vh100 col-xl-1 col-lg-1 col-md-2 col-sm-2 col-xs-12 sidebar border-right" id="collapseExample">
+		    <div class="vh100 col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-12 sidebar border-right" id="collapseExample">
 		      <div class="nav nav-pills navbar-nav" id="v-pills-tab-sg" role="tablist" aria-orientation="vertical">
 		        <a class="nav-link active show p-lg-2 p-md-2 p-xs-2" data-toggle="pill" href="#Typography" role="tab" aria-controls="Typography" aria-selected="false">Tipografía</a>
 		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Colors" role="tab" aria-controls="Colors" aria-selected="false">Colores</a>
@@ -35,8 +35,8 @@
 		        <a class="nav-link p-lg-2 p-md-2 p-xs-2" id="" data-toggle="pill" href="#Wizard" role="tab" aria-controls="Wizard" aria-selected="false">Wizard</a>
 		      </div>
 		    </div>
-		    <div class="col-xl-11 col-lg-11 col-md-10 col-sm-10 col-xs-12">
-		      <div class="vh100 tab-content card pt-lg-4 pr-lg-4 pl-lg-4 pb-lg-5 pt-md-4 pr-md-4 pl-md-4" id="v-pills-tabContent">
+		    <div class="col-xl-11 col-lg-11 col-md-11 col-sm-10 col-xs-12">
+		      <div class="vh100 tab-content card pt-lg-4 pr-lg-4 pl-lg-4 pb-lg-5 pt-md-4 pr-md-4 pl-md-4 pt-xl-4 pr-xl-4 pl-xl-4 pb-xl-5 pt-sm-4 pr-sm-4 pl-sm-4 pb-sm-5" id="v-pills-tabContent">
 		        <div class="tab-pane fade active show" id="Typography" role="tabpanel" aria-labelledby="Typography">
 		        	<h1 class="bd-title">Tipografía</h1>
 		          <p>Roboto como principal y luego usamos un Font Stack Nativo de Boostrap 4 que selecciona la mejor font-family para cada OS y dispositivo. <a target="_blank" href="https://getbootstrap.com/docs/4.1/content/reboot/#native-font-stack">Leer más</a> </p>
@@ -141,6 +141,12 @@
 					    		<code>$gray-placeholder - #999999</code>
 					    	</div>
 					    </div>
+					    <div class="color-swatch bd-gray-hover">
+					    	<div class="p-lg-2 bg-light">
+					    		<code>$gray-hover - #b3b3b3</code>
+					    	</div>
+					    </div>
+
 					    <div class="color-swatch bd-gray-outline">
 					    	<div class="p-lg-2 bg-light">
 					    		<code>$gray-outline - #cccccc</code>
@@ -149,11 +155,6 @@
 					    <div class="color-swatch bd-gray-bg">
 					    	<div class="p-lg-2 bg-light">
 					    		<code>$gray-bg - #f2f2f2</code>
-					    	</div>
-					    </div>
-					    <div class="color-swatch bd-gray-hover">
-					    	<div class="p-lg-2 bg-light">
-					    		<code>$gray-hover - #b3b3b3</code>
 					    	</div>
 					    </div>
 					    
@@ -541,13 +542,13 @@
 						<table class="table table-striped table-responsive-xl table-brand">
 						  <thead>
 						    <tr>
-						      <th scope="col" style="width:18%">Lineamiento</th>
-						      <th scope="col" style="width:22%">Objetivo Ministerial</th>
+						      <th scope="col" style="width:17%">Lineamiento</th>
+						      <th scope="col" style="width:19%">Objetivo Ministerial</th>
 						      <th scope="col" style="width:15%">Proyecto</th>
-						      <th scope="col" style="width:10%">Fecha inicio de Planificación</th>
-						      <th scope="col" style="width:10%">Fecha fin de Planificación</th>
-						      <th scope="col" style="width:7%">Estado</th>
-						      <th scope="col" style="width:18%;">Edición</th>
+						      <th scope="col" style="width:9%">Fecha inicio de Planificación</th>
+						      <th scope="col" style="width:9%">Fecha fin de Planificación</th>
+						      <th scope="col" style="width:6%">Estado</th>
+						      <th scope="col" style="width:25%;">Edición</th>
 						    </tr>
 						  </thead>
 						  <tbody>
@@ -721,6 +722,8 @@
 											<option>4. Desarrollo Humano Sustentable</option>
 										</select>
 									</div>
+
+
 									<div class="form-group">
 										<label for="exampleFormControlSelect2" class="form-text">Ejemplo multiple select</label>
 										<select multiple class="form-control" id="exampleFormControlSelect2">
@@ -731,9 +734,58 @@
 											<option>Ambiente</option>
 										</select>
 									</div>
+									
+
+
 									<div class="form-group">
 										<label for="exampleFormControlTextarea1" class="form-text">Ejemplo textarea</label>
 										<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									</div>
+
+									<div class="form-group">
+
+										<div class="btn-group multiple-select">
+											<button type="button" class="btn btn-multiple-select dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Ejemplo multiple select
+											</button>
+											<div class="dropdown-menu dm-ms">
+
+												<div class="form-group">
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="customCheck10">
+														<label class="custom-control-label" for="customCheck10">1- Estabilidad Macroeconómica</label>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="customCheck11">
+														<label class="custom-control-label" for="customCheck11">2- Acuerdo Productivo Nacional</label>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="customCheck12">
+														<label class="custom-control-label" for="customCheck12">3- Desarrollo de Infraestructura</label>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="custom-control custom-checkbox">
+														<input type="checkbox" class="custom-control-input" id="customCheck13">
+														<label class="custom-control-label" for="customCheck13">4- Desarrollo Humano sustentable</label>
+													</div>
+												</div>
+												<div class="form-group last">
+													<div class="custom-control custom-checkbox ">
+														<input type="checkbox" class="custom-control-input" id="customCheck14" disabled>
+														<label class="custom-control-label" for="customCheck14"  >5- Fortalecimiento Institucional</label>
+													</div>
+												</div>
+
+											</div>
+										</div>
+
+
+
 									</div>
 
 									<div class="form-group">
@@ -1359,7 +1411,6 @@
 		        <div class="tab-pane fade position-relative" id="Wizard" role="tabpanel" aria-labelledby="Wizard">
 		        	<h1 class="bd-title">Wizard</h1>
 
-					 <p>Ejemplo</p>
 
 					<nav class="nav nav-pills nav-fill wizard">
 					  <a class="nav-item nav-link rounded-0 active" href="#">CREAR PROYECTO</a>
@@ -1391,24 +1442,14 @@
 								    </select>
 								  </div>
 								  <div class="form-group">
-								    <label for="exampleFormControlSelect2" class="form-text">Example multiple select</label>
-								    <select multiple class="form-control" id="exampleFormControlSelect2">
-								      <option>AABE</option>
-								      <option>ACUMAR</option>
-								      <option>AFIP</option>
-								      <option>Agroindustria</option>
-								      <option>Ambiente</option>
-								    </select>
-								  </div>
-								  <div class="form-group">
 								    <label for="exampleFormControlTextarea1" class="form-text">Descripción</label>
 								    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 								  </div>
 
 								   <div class="form-group">
 								  	<div class="custom-control custom-checkbox">
-										<input type="checkbox" class="custom-control-input" id="customCheck11">
-										<label class="custom-control-label" for="customCheck11">Check this custom checkbox</label>
+										<input type="checkbox" class="custom-control-input" id="customCheck111">
+										<label class="custom-control-label" for="customCheck111">Check this custom checkbox</label>
 									</div>
 								  </div>
 
@@ -1475,6 +1516,12 @@
 		$('#datepicker').datepicker({
 		  uiLibrary: 'bootstrap4',
 		});
+		$('.dm-ms').on('click', function(event){
+		    // The event won't be propagated up to the document NODE and 
+		    // therefore delegated events won't be fired
+		    event.stopPropagation();
+		});
+
 	</script>
 
 
