@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -6815,13 +6816,40 @@ html, body {
     font-size: 1.6rem;
   }
 }*/
-body, html {
-  height: 100%; }
-
+/* ==========================================================================
+  JGM Style Guide Demo -- Version: 1.0.0.0 - Updated: 28/11/2018
+========================================================================== */
+/**
+ * CONTENTS
+ *
+ * SECCIÓN GENERAL
+ * Global...............Estilos globales del demo
+ *
+ * CODE EXAMPLE
+ * Code styles html.....Estilos para la vista de código en el browser.
+ *
+ * SECTION-TITLE
+ *
+ * BOTONES
+ *
+ * COLOR SWATCHES
+ *
+ * MAIN NAV
+ *
+ * Alets brand
+ */
+/*------------------------------------*\
+  #Global
+\*------------------------------------*/
 a {
   color: #0695d6; }
   a:hover {
     color: #17b2f8; }
+
+.link-detail {
+  text-transform: inherit;
+  font-weight: 300;
+  text-decoration: underline; }
 
 .sidebar {
   color: #fff;
@@ -6829,7 +6857,10 @@ a {
   .sidebar a {
     color: #fff; }
 
-h4 {
+.right-0 {
+  right: 0; }
+
+.demo-h4 {
   font-weight: 300; }
 
 .vh100 {
@@ -6838,6 +6869,9 @@ h4 {
 .bd-title {
   margin-bottom: .5rem;
   font-weight: 300; }
+
+.bg-dark-brand {
+  background-color: #bdbdbd; }
 
 .fill-gray-lighter {
   background-color: #f4f4f4 !important; }
@@ -6851,6 +6885,21 @@ h4 {
   color: #767676;
   font-size: 1.25rem; }
 
+.d-block {
+  display: block !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.link-show-block {
+  color: #a6a8ab;
+  border-top: 1px solid #a6a8ab;
+  padding-top: .4rem;
+  padding-bottom: .4rem; }
+  .link-show-block:hover, .link-show-block:active {
+    color: #a6a8ab;
+    background-color: #f9f9f9; }
+
 .table-brand th {
   color: black;
   text-align: center;
@@ -6861,6 +6910,9 @@ h4 {
 .table-brand td {
   border-bottom: 1px solid #dee2e6;
   font-size: .85rem; }
+.table-brand tr {
+  border-left: 1px solid #dee2e6;
+  border-right: 1px solid #dee2e6; }
 
 .table-striped tbody tr:nth-of-type(odd) {
   background-color: #f2f2f2; }
@@ -6872,6 +6924,9 @@ h4 {
 .form-control[readonly]:focus {
   box-shadow: none; }
 
+/*------------------------------------*\
+  #Style Guide JGM - Portal
+\*------------------------------------*/
 .bd-example {
   position: relative;
   padding: 1rem;
@@ -6917,6 +6972,9 @@ h4 {
   .bd-example > .close {
     float: none; }
 
+/*------------------------------------*\
+  #SECTION-TITLE
+\*------------------------------------*/
 .s {
   color: #d44950; }
 
@@ -7111,49 +7169,12 @@ h4 {
   background-color: #f7f7f9;
   -ms-overflow-style: -ms-autohiding-scrollbar; }
 
-.btn-clipboard {
-  position: absolute;
-  top: .5rem;
-  right: .5rem;
-  z-index: 10;
-  display: block;
-  padding: .25rem .5rem;
-  font-size: 75%;
-  color: #818a91;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-  border-radius: .25rem; }
+/*------------------------------------*\
+  #BOTONES
+\*------------------------------------*/
+.btn {
+  text-transform: uppercase; }
 
-.bd-clipboard {
-  position: relative;
-  display: none;
-  float: right; }
-
-.bd-clipboard + .highlight {
-  margin-top: 0; }
-
-.btn-clipboard {
-  position: absolute;
-  top: .5rem;
-  right: .5rem;
-  z-index: 10;
-  display: block;
-  padding: .25rem .5rem;
-  font-size: 75%;
-  color: #818a91;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
-  border-radius: .25rem; }
-
-.btn-clipboard:hover {
-  color: #fff;
-  background-color: #027de7; }
-
-@media (min-width: 768px) {
-  .bd-clipboard {
-    display: block; } }
 .btn-primary-brand {
   background-color: #0695d6;
   border: #0695d6; }
@@ -7170,16 +7191,18 @@ h4 {
 
 .btn-link-brand {
   text-transform: uppercase;
-  color: #999999; }
+  color: #a6a8ab; }
   .btn-link-brand:hover {
     color: #0695d6;
     background-color: #f2f2f2;
     text-decoration: none; }
 
-.btn-link {
-  color: #0695d6; }
-  .btn-link:hover {
-    color: #17b2f8; }
+.btn-add {
+  background-color: #33b560;
+  border: #33b560; }
+  .btn-add:hover {
+    background-color: #218838;
+    text-decoration: none; }
 
 .btn-outline-primary-brand {
   border-color: #0695d6;
@@ -7199,6 +7222,9 @@ h4 {
     border-color: #0695d6;
     background-color: #0695d6; }
 
+/*------------------------------------*\
+  #Color swatches
+\*------------------------------------*/
 .color-swatches {
   margin: 0 -5px;
   overflow: hidden; }
@@ -7247,6 +7273,9 @@ h4 {
 .color-swatches .bd-box-info {
   background-color: #D1F0FE; }
 
+/*------------------------------------*\
+  #MAIN NAV
+\*------------------------------------*/
 .link-brand {
   color: #0695d6 !important; }
 
@@ -7293,7 +7322,7 @@ h4 {
   border-top: 1px solid silver; }
   #main-nav nav .dropdown-item {
     display: inline-block;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0rem 0.2rem 1rem;
     width: inherit;
     font-size: 0.9rem; }
     #main-nav nav .dropdown-item:hover {
@@ -7390,15 +7419,13 @@ h4 {
 #menu-user {
   font-size: 0.9rem !important; }
 
-.right-0 {
-  right: 0; }
-
 #v-pills-tab-sg .nav-link {
   color: #878a8c;
   margin-left: -15px;
   margin-right: -15px;
   padding: 0.85rem !important;
-  font-weight: 300; }
+  font-weight: 300;
+  text-transform: inherit; }
 #v-pills-tab-sg .nav-link.active {
   opacity: 1 !important;
   color: #fff;
@@ -7418,6 +7445,12 @@ h4 {
 
 .disabled {
   cursor: not-allowed; }
+
+.modal-brand .modal-header {
+  padding: 1rem;
+  border-bottom: none; }
+.modal-brand .modal-footer {
+  border-top: none; }
 
 .modal-warning-brand .modal-header {
   border-bottom: transparent;
@@ -7500,7 +7533,13 @@ h4 {
   width: 100%;
   position: relative;
   min-width: 240px;
-  font-size: .8rem; }
+  font-size: .8rem;
+  color: #0695d6;
+  cursor: pointer;
+  border-bottom: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6; }
+#Tabs .nav-link.active {
+  font-weight: 600; }
 #Tabs .nav-link.active:after {
   content: "";
   display: inline-block;
@@ -7508,8 +7547,8 @@ h4 {
   top: 0;
   right: -10px;
   z-index: 9999999999;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
   border-left: 10px solid #D1F0FE;
   height: 100%; }
 #Tabs .nav-pills .nav-link {
@@ -7526,11 +7565,21 @@ h4 {
 #Tabs .tab-edit {
   right: 5px;
   position: absolute;
-  top: 8px; }
+  top: 15px; }
 
-.bg-dark-brand {
-  background-color: #bdbdbd; }
+#myTabLinks {
+  border-bottom: 1px solid transparent; }
+  #myTabLinks .nav-link {
+    color: #a6a8ab; }
+  #myTabLinks .nav-link.active {
+    color: #0695d6;
+    border-color: transparent; }
+  #myTabLinks .nav-link:hover, #myTabLinks .nav-link:focus {
+    border-color: transparent; }
 
+/*------------------------------------*\
+  #Alets brand
+\*------------------------------------*/
 .alert-success {
   color: #000000;
   background-color: rgba(51, 181, 96, 0.3);
@@ -7557,7 +7606,20 @@ h4 {
 .wizard .nav-item.active {
   background-color: #0695d6; }
 
-/* style all elements with a required attribute */
+.datepicker .selected div {
+  background-color: #0695d6 !important;
+  border-color: #0695d6 !important; }
+
+.custom-control-input:checked ~ .custom-control-label::before, .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  background-color: #0695d6; }
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before, .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #0695d6; }
+
+.custom-select {
+  -webkit-appearance: none !important; }
+
 /* style all input elements with a required attribute */
 input:required {
   border: 1px solid #f44040; }
@@ -7585,21 +7647,3 @@ input:required:hover {
     float: none;
     display: table-cell;
     vertical-align: top; } }
-.datepicker .selected div {
-  background-color: #0695d6 !important;
-  border-color: #0695d6 !important; }
-
-.custom-control-input:checked ~ .custom-control-label::before, .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  color: #fff;
-  background-color: #0695d6; }
-
-.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before, .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #0695d6; }
-
-.custom-select {
-  -webkit-appearance: none !important; }
-
-table .text-truncate {
-  display: block; }
-
-/*# sourceMappingURL=main.css.map */
